@@ -1,0 +1,5 @@
+{
+  "name": "Legal Contracts Generator",
+  "description": "A modern web application to generate simple, fill-in-the-blank legal agreements from templates. This tool provides a professional interface and allows users to download the generated documents as simulated DOCX files.",
+  "requestFramePermissions": []
+}
