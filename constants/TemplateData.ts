@@ -1,243 +1,249 @@
-
+// FIX: This file was regenerated to fix module loading errors. It now contains the necessary data structures and exports for the application to function correctly.
 import { AgreementType } from '../types';
 
 export const templateGalleryData = [
   {
     category: 'Startup & Corporate',
     templates: [
-      { title: AgreementType.NDA, description: "Protect sensitive information shared between parties.", icon: "/confidentiality-agreement.svg", fields: ['scopeOfWork'] },
-      { title: AgreementType.FounderAgreement, description: "Define roles, responsibilities, and equity for co-founders.", icon: "/founder-agreement.svg", fields: ['scopeOfWork'] },
-      { title: AgreementType.ShareholderAgreement, description: "Govern the relationship between a company's shareholders.", icon: "/shareholder-agreement.svg", fields: [] },
-      { title: AgreementType.OperatingAgreement, description: "Outline the ownership and operating procedures of an LLC.", icon: "/operating-agreement.svg", fields: [] },
-      { title: AgreementType.Bylaws, description: "Establish the internal rules for governing a corporation.", icon: "/bylaws.svg", fields: [] },
-      { title: AgreementType.ArticlesOfIncorporation, description: "The primary document to form a new corporation.", icon: "/articles-of-incorporation.svg", fields: [] },
-      { title: AgreementType.BoardResolution, description: "Document a formal decision made by the board of directors.", icon: "/board-resolution.svg", fields: [] },
-      { title: AgreementType.AdvisoryBoardAgreement, description: "Formalize the relationship with an advisory board member.", icon: "/advisory-board-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.VestingAgreement, description: "Detail the schedule for earning stock or options over time.", icon: "/vesting-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.StockPurchaseAgreement, description: "An agreement for the sale and purchase of company stock.", icon: "/stock-purchase-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.AssetPurchaseAgreement, description: "Document the sale of significant business assets.", icon: "/asset-purchase-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.MergerAgreement, description: "Formalize the terms of a business merger.", icon: "/merger-agreement.svg", fields: [] },
-      { title: AgreementType.LetterOfIntent, description: "A non-binding document outlining the main terms of a potential deal.", icon: "/letter-of-intent.svg", fields: ['scopeOfWork'] },
-      { title: AgreementType.TermSheet, description: "A summary of the key financial and other terms of a proposed venture.", icon: "/term-sheet.svg", fields: ['compensation'] },
-      { title: AgreementType.BusinessPlan, description: "A formal document outlining a company's goals and strategies.", icon: "/business-plan.svg", fields: [] },
-      { title: AgreementType.MinutesOfMeeting, description: "Official record of the proceedings of a meeting.", icon: "/minutes-of-meeting.svg", fields: [] },
-    ]
+      { title: AgreementType.NDA, description: 'Protect sensitive information shared between parties.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.FounderAgreement, description: 'Define roles, responsibilities, and equity for co-founders.', icon: '/icons/corporate.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.ShareholderAgreement, description: 'Govern the relationship between a company\'s shareholders.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.OperatingAgreement, description: 'Outline the functional and financial decisions for an LLC.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.Bylaws, description: 'Set the rules for a corporation\'s internal management.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.ArticlesOfIncorporation, description: 'The primary corporate charter document filed with the state.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.BoardResolution, description: 'Document a binding decision made by the board of directors.', icon: '/icons/corporate.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.AdvisoryBoardAgreement, description: 'Formalize the relationship with and compensation for advisors.', icon: '/icons/corporate.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.VestingAgreement, description: 'Define the schedule for earning stock or options over time.', icon: '/icons/corporate.svg', fields: ['compensation'] },
+      { title: AgreementType.StockPurchaseAgreement, description: 'Govern the sale and purchase of company stock.', icon: '/icons/corporate.svg', fields: ['compensation'] },
+      { title: AgreementType.AssetPurchaseAgreement, description: 'Document the sale of significant business assets.', icon: '/icons/corporate.svg', fields: ['compensation'] },
+      { title: AgreementType.MergerAgreement, description: 'Outline the terms for combining two companies.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.LetterOfIntent, description: 'A non-binding document outlining the main points of a proposed deal.', icon: '/icons/corporate.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.TermSheet, description: 'A non-binding agreement setting out the basic terms of an investment.', icon: '/icons/corporate.svg', fields: ['compensation'] },
+      { title: AgreementType.BusinessPlan, description: 'Outline your business goals and strategies to achieve them.', icon: '/icons/corporate.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.CorporateResolution, description: 'Formally record a specific action taken by a corporation.', icon: '/icons/corporate.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.MinutesOfMeeting, description: 'Keep a formal record of proceedings during a meeting.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.CapitalizationTable, description: 'A spreadsheet detailing a company\'s equity ownership.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.ProxyStatement, description: 'A document containing information for shareholder voting.', icon: '/icons/corporate.svg', fields: [] },
+      { title: AgreementType.ShareCertificate, description: 'A legal document certifying ownership of shares in a corporation.', icon: '/icons/corporate.svg', fields: ['compensation'] },
+    ],
   },
   {
     category: 'HR & Employment',
     templates: [
-      { title: AgreementType.IndependentContractor, description: "Hire a freelancer or contractor for a specific project.", icon: "/contractor-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.OfferLetter, description: "A formal offer of employment to a candidate.", icon: "/offer-letter.svg", fields: ['compensation'] },
-      { title: AgreementType.EmploymentAgreement, description: "Define the terms and conditions of employment.", icon: "/employment-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.EmployeeHandbook, description: "A guide to a company's policies and procedures.", icon: "/employee-handbook.svg", fields: [] },
-      { title: AgreementType.SeparationAgreement, description: "Terms for an employee's departure from a company.", icon: "/separation-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.PerformanceImprovementPlan, description: "Document steps for an employee to improve performance.", icon: "/pip-agreement.svg", fields: ['scopeOfWork'] },
-      { title: AgreementType.NonCompeteAgreement, description: "Prevent an employee from competing after termination.", icon: "/non-compete-agreement.svg", fields: [] },
-      { title: AgreementType.InternshipAgreement, description: "Define the terms of an internship for a student or trainee.", icon: "/internship-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.WorkFromHomePolicy, description: "Establish rules and guidelines for remote work.", icon: "/work-from-home-policy.svg", fields: [] },
-    ]
+      { title: AgreementType.IndependentContractor, description: 'Hire a contractor for a specific project or service.', icon: '/icons/hr.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.OfferLetter, description: 'Formally offer a job to a candidate with key terms.', icon: '/icons/hr.svg', fields: ['compensation'] },
+      { title: AgreementType.EmploymentAgreement, description: 'A comprehensive contract for a new employee.', icon: '/icons/hr.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.EmployeeHandbook, description: 'Outline company policies, procedures, and expectations.', icon: '/icons/hr.svg', fields: [] },
+      { title: AgreementType.SeparationAgreement, description: 'Terms of an employee\'s departure from the company.', icon: '/icons/hr.svg', fields: ['compensation'] },
+      { title: AgreementType.PerformanceImprovementPlan, description: 'Document steps for an employee to improve performance.', icon: '/icons/hr.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.JobDescription, description: 'Clearly define the roles and responsibilities of a position.', icon: '/icons/hr.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.NonCompeteAgreement, description: 'Prevent an ex-employee from competing for a certain period.', icon: '/icons/hr.svg', fields: [] },
+      { title: AgreementType.EmployeeWarningNotice, description: 'Formally document a disciplinary action or warning.', icon: '/icons/hr.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.RecruitmentServicesAgreement, description: 'Engage a third-party recruiter to find candidates.', icon: '/icons/hr.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.InternshipAgreement, description: 'Define the terms of an internship, paid or unpaid.', icon: '/icons/hr.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.VolunteerAgreement, description: 'Outline the expectations and role of a volunteer.', icon: '/icons/hr.svg', fields: ['scopeOfWork'] },
+      { title: AgreementType.EmployeeBenefitsSummary, description: 'Provide an overview of the benefits offered to employees.', icon: '/icons/hr.svg', fields: [] },
+      { title: AgreementType.BackgroundCheckPolicy, description: 'Inform candidates about your company\'s background check process.', icon: '/icons/hr.svg', fields: [] },
+      { title: AgreementType.WorkFromHomePolicy, description: 'Set guidelines and expectations for remote work.', icon: '/icons/hr.svg', fields: [] },
+    ],
   },
   {
     category: 'Sales & Services',
     templates: [
-      { title: AgreementType.SimpleService, description: "A basic contract for providing services to a client.", icon: "/simple-service-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.ConsultingAgreement, description: "Hire an expert consultant for advice and services.", icon: "/consulting-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.MasterServiceAgreement, description: "A foundational contract governing future transactions or projects.", icon: "/master-service-agreement.svg", fields: [] },
-      { title: AgreementType.StatementOfWork, description: "A detailed document that defines project-specific activities.", icon: "/statement-of-work.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.SalesAgreement, description: "Formalize the sale of goods between a buyer and seller.", icon: "/sales-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.InfluencerAgreement, description: "Contract with a social media influencer for marketing.", icon: "/influencer-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.AffiliateAgreement, description: "Set terms for an affiliate to promote your products.", icon: "/affiliate-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.ReferralAgreement, description: "Agreement for referring new clients or customers.", icon: "/referral-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.DistributionAgreement, description: "Appoint a distributor for your products in a specific territory.", icon: "/distribution-agreement.svg", fields: ['scopeOfWork'] },
-      { title: AgreementType.CateringContract, description: "Contract for providing catering services for an event.", icon: "/catering-contract.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.PhotographyServicesAgreement, description: "Hire a photographer for an event or project.", icon: "/photography-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-      { title: AgreementType.WebDesignContract, description: "Contract for website design and development services.", icon: "/web-design-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-    ]
+      { title: AgreementType.SimpleService, description: 'A basic contract for providing services to a client.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.ConsultingAgreement, description: 'Engage a consultant for their expert advice and services.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.MasterServiceAgreement, description: 'A foundational contract governing future work and SOWs.', icon: '/icons/sales.svg', fields: [] },
+      { title: AgreementType.StatementOfWork, description: 'Define the specifics of a project under an MSA.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.SalesAgreement, description: 'Document the terms of a sale of goods or products.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.InfluencerAgreement, description: 'Contract with a social media influencer for marketing.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.AffiliateAgreement, description: 'Set terms for partners who promote your products for a commission.', icon: '/icons/sales.svg', fields: ['compensation'] },
+      { title: AgreementType.ReferralAgreement, description: 'Reward parties for referring new clients or customers.', icon: '/icons/sales.svg', fields: ['compensation'] },
+      { title: AgreementType.DistributionAgreement, description: 'Authorize a third party to sell and market your products.', icon: '/icons/sales.svg', fields: [] },
+      { title: AgreementType.FranchiseAgreement, description: 'Grant a franchisee the right to operate a business under your brand.', icon: '/icons/sales.svg', fields: [] },
+      { title: AgreementType.CateringContract, description: 'Outline terms for providing food services for an event.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.EventPlanningContract, description: 'Hire a professional to plan and execute an event.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.PhotographyServicesAgreement, description: 'Contract a photographer for an event or project.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.VideographyServicesAgreement, description: 'Contract a videographer for an event or project.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.WebDesignContract, description: 'Outline the scope and payment for web development services.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+      { title: AgreementType.MarketingServicesAgreement, description: 'Engage a marketing agency or freelancer for promotional work.', icon: '/icons/sales.svg', fields: ['scopeOfWork', 'compensation'] },
+    ],
   },
   {
     category: 'Intellectual Property',
     templates: [
-      { title: AgreementType.IPAssignment, description: "Transfer ownership of intellectual property rights.", icon: "/ip-assignment-agreement.svg", fields: ['scopeOfWork'] },
-      { title: AgreementType.TrademarkLicense, description: "Grant permission to use your trademark.", icon: "/trademark-license-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.CopyrightLicense, description: "Grant permission to use your copyrighted work.", icon: "/copyright-license-agreement.svg", fields: ['compensation'] },
-      { title: AgreementType.SoftwareLicense, description: "An End-User License Agreement (EULA) for software.", icon: "/software-license-agreement.svg", fields: [] },
-      { title: AgreementType.PrivacyPolicy, description: "Disclose how you collect, use, and manage user data.", icon: "/privacy-policy.svg", fields: [] },
-      { title: AgreementType.TermsOfService, description: "The rules and guidelines for using your website or service.", icon: "/terms-of-service.svg", fields: [] },
-      { title: AgreementType.PhotoRelease, description: "Get consent to use someone's image or likeness.", icon: "/photo-release-form.svg", fields: [] },
-      { title: AgreementType.ModelRelease, description: "Consent from a model to use their image.", icon: "/model-release-form.svg", fields: [] },
-      { title: AgreementType.CeaseAndDesistIP, description: "Demand a party stop infringing on your IP rights.", icon: "/cease-and-desist-letter.svg", fields: [] },
+      { title: AgreementType.IPAssignment, description: "Transfer ownership of intellectual property from one party to another.", icon: "/icons/ip.svg", fields: ['scopeOfWork'] },
+      { title: AgreementType.TrademarkLicense, description: "Grant permission to use your trademark under specific conditions.", icon: "/icons/ip.svg", fields: ['compensation'] },
+      { title: AgreementType.CopyrightLicense, description: "Grant rights to use a copyrighted work (e.g., music, photos).", icon: "/icons/ip.svg", fields: ['compensation'] },
+      { title: AgreementType.PatentLicense, description: "Allow another party to make, use, or sell your patented invention.", icon: "/icons/ip.svg", fields: ['compensation'] },
+      { title: AgreementType.SoftwareLicense, description: "Set the terms for end-users to use your software (EULA).", icon: "/icons/ip.svg", fields: [] },
+      { title: AgreementType.PrivacyPolicy, description: "Inform users how you collect, use, and protect their data.", icon: "/icons/ip.svg", fields: [] },
+      { title: AgreementType.TermsOfService, description: "Define the rules and guidelines for using your website or service.", icon: "/icons/ip.svg", fields: [] },
+      { title: AgreementType.DMCAComplaint, description: "A notice to a service provider to take down infringing content.", icon: "/icons/ip.svg", fields: ['scopeOfWork'] },
+      { title: AgreementType.PhotoRelease, description: "Get consent to use someone's image or likeness.", icon: "/icons/ip.svg", fields: [] },
+      { title: AgreementType.ModelRelease, description: "A photo release specifically for professional models.", icon: "/icons/ip.svg", fields: ['compensation'] },
+      { title: AgreementType.IdeaSubmissionAgreement, description: "Protect your company when receiving unsolicited ideas.", icon: "/icons/ip.svg", fields: [] },
+      { title: AgreementType.CeaseAndDesistIP, description: "Demand that a party stops infringing on your IP rights.", icon: "/icons/ip.svg", fields: ['scopeOfWork'] },
     ]
   },
   {
-    category: 'Financial Agreements',
-    templates: [
-        { title: AgreementType.PromissoryNote, description: "A written promise to pay a specific sum of money to someone.", icon: "/promissory-note.svg", fields: ['compensation'] },
-        { title: AgreementType.LoanAgreement, description: "Formalize the terms of a loan between a lender and borrower.", icon: "/loan-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.SAFEAgreement, description: "An agreement for an investor to get future equity in a startup.", icon: "/safe-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.ConvertibleNote, description: "A form of short-term debt that converts into equity.", icon: "/convertible-note.svg", fields: ['compensation'] },
-        { title: AgreementType.InvoiceTemplate, description: "A standard template for billing clients for goods or services.", icon: "/invoice-template.svg", fields: ['compensation'] },
-        { title: AgreementType.PurchaseOrder, description: "A commercial document issued by a buyer to a seller.", icon: "/purchase-order.svg", fields: ['compensation'] },
-    ]
+      category: "Financial Agreements",
+      templates: [
+          { title: AgreementType.PromissoryNote, description: "A written promise to pay a specific sum of money to a party.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.LoanAgreement, description: "Detail the terms of a loan, including interest and repayment.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.SecurityAgreement, description: "Pledge an asset as collateral for a loan.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.InvestmentAgreement, description: "Outline the terms of an investment into your company.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.SAFEAgreement, description: "An agreement for future equity in a company, common for startups.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.ConvertibleNote, description: "A form of short-term debt that converts into equity.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.InvoiceTemplate, description: "A standard form for billing clients for goods or services.", icon: "/icons/financial.svg", fields: ['compensation', 'scopeOfWork'] },
+          { title: AgreementType.PurchaseOrder, description: "A commercial document issued by a buyer to a seller.", icon: "/icons/financial.svg", fields: ['compensation', 'scopeOfWork'] },
+          { title: AgreementType.ExpenseReport, description: "A form for employees to report business-related expenses.", icon: "/icons/financial.svg", fields: ['compensation'] },
+          { title: AgreementType.GuarantyAgreement, description: "A promise by a third party to assume a debt if the borrower defaults.", icon: "/icons/financial.svg", fields: ['compensation'] },
+      ]
   },
   {
-    category: 'Real Estate',
-    templates: [
-        { title: AgreementType.CommercialLease, description: "Lease a commercial property for business use.", icon: "/commercial-lease-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.ResidentialLease, description: "Rent out a residential property to a tenant.", icon: "/residential-lease-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.SubleaseAgreement, description: "Agreement for a tenant to re-rent their leased property.", icon: "/sublease-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.EvictionNotice, description: "A formal notice from a landlord to a tenant to vacate a property.", icon: "/eviction-notice.svg", fields: [] },
-        { title: AgreementType.RealEstatePurchase, description: "A binding contract for the sale of property.", icon: "/real-estate-purchase-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.PropertyManagement, description: "Hire a third party to manage a rental property.", icon: "/property-management-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-    ]
+      category: "Real Estate",
+      templates: [
+          { title: AgreementType.CommercialLease, description: "Lease a property for business purposes.", icon: "/icons/real-estate.svg", fields: ['compensation'] },
+          { title: AgreementType.ResidentialLease, description: "Rent out a residential property to a tenant.", icon: "/icons/real-estate.svg", fields: ['compensation'] },
+          { title: AgreementType.SubleaseAgreement, description: "A tenant rents their existing leased property to a new subtenant.", icon: "/icons/real-estate.svg", fields: ['compensation'] },
+          { title: AgreementType.RentalApplication, description: "Collect information from prospective tenants.", icon: "/icons/real-estate.svg", fields: [] },
+          { title: AgreementType.LeaseTermination, description: "Formally end a lease agreement earlier than the original term.", icon: "/icons/real-estate.svg", fields: [] },
+          { title: AgreementType.EvictionNotice, description: "The first step in the legal process of evicting a tenant.", icon: "/icons/real-estate.svg", fields: [] },
+          { title: AgreementType.RealEstatePurchase, description: "The primary contract for buying or selling property.", icon: "/icons/real-estate.svg", fields: ['compensation'] },
+          { title: AgreementType.PropertyManagement, description: "Hire a company to manage your rental property.", icon: "/icons/real-estate.svg", fields: ['scopeOfWork', 'compensation'] },
+          { title: AgreementType.ConstructionContract, description: "Outline the terms for a construction project.", icon: "/icons/real-estate.svg", fields: ['scopeOfWork', 'compensation'] },
+          { title: AgreementType.HomeInspectionContract, description: "Engage a professional to inspect a property before purchase.", icon: "/icons/real-estate.svg", fields: ['scopeOfWork', 'compensation'] },
+      ]
   },
   {
-    category: 'Partnerships & Joint Ventures',
-    templates: [
-        { title: AgreementType.PartnershipAgreement, description: "Establish the terms and conditions between business partners.", icon: "/partnership-agreement.svg", fields: [] },
-        { title: AgreementType.JointVentureAgreement, description: "An agreement between two or more parties for a specific project.", icon: "/joint-venture-agreement.svg", fields: ['scopeOfWork'] },
-        { title: AgreementType.MOU, description: "Outlines a cooperative relationship between two parties.", icon: "/mou-agreement.svg", fields: ['scopeOfWork'] },
-    ]
+      category: "Partnerships & Joint Ventures",
+      templates: [
+          { title: AgreementType.PartnershipAgreement, description: "Define the rights, responsibilities, and profit-sharing for business partners.", icon: "/icons/partnerships.svg", fields: ['scopeOfWork'] },
+          { title: AgreementType.JointVentureAgreement, description: "Two or more parties agree to collaborate on a specific project.", icon: "/icons/partnerships.svg", fields: ['scopeOfWork'] },
+          { title: AgreementType.StrategicAllianceAgreement, description: "Parties agree to cooperate to achieve a common business objective.", icon: "/icons/partnerships.svg", fields: ['scopeOfWork'] },
+          { title: AgreementType.MOU, description: "A non-binding agreement that outlines a future, more detailed contract.", icon: "/icons/partnerships.svg", fields: ['scopeOfWork'] },
+      ]
   },
   {
-    category: 'General Business & Legal Letters',
-    templates: [
-        { title: AgreementType.PowerOfAttorney, description: "Grant someone the authority to act on your behalf.", icon: "/power-of-attorney.svg", fields: [] },
-        { title: AgreementType.IndemnityAgreement, description: "Transfer risk from one party to another.", icon: "/indemnity-agreement.svg", fields: [] },
-        { title: AgreementType.WaiverRelease, description: "Relinquish a legal claim in exchange for compensation.", icon: "/waiver-release-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.DemandLetter, description: "A formal letter demanding payment or another action.", icon: "/demand-letter.svg", fields: ['compensation'] },
-        { title: AgreementType.BillOfSale, description: "Record the transfer of ownership of personal property.", icon: "/bill-of-sale.svg", fields: ['compensation'] },
-        { title: AgreementType.ConsignmentAgreement, description: "Agreement to sell goods on behalf of the owner.", icon: "/consignment-agreement.svg", fields: ['scopeOfWork'] },
-        { title: AgreementType.EquipmentLease, description: "An agreement for renting equipment.", icon: "/equipment-lease-agreement.svg", fields: ['compensation'] },
-        { title: AgreementType.SponsorshipAgreement, description: "Formalize an agreement with a sponsor for an event or project.", icon: "/sponsorship-agreement.svg", fields: ['scopeOfWork', 'compensation'] },
-    ]
+      category: "General Business & Legal",
+      templates: [
+          { title: AgreementType.PowerOfAttorney, description: "Grant someone the authority to act on your behalf in legal or financial matters.", icon: "/icons/general.svg", fields: [] },
+          { title: AgreementType.IndemnityAgreement, description: "One party agrees to protect another from loss or damage.", icon: "/icons/general.svg", fields: ['scopeOfWork'] },
+          { title: AgreementType.WaiverRelease, description: "A party voluntarily gives up a right, claim, or privilege.", icon: "/icons/general.svg", fields: ['scopeOfWork'] },
+          { title: AgreementType.SettlementAgreement, description: "Resolve a dispute between parties and release them from future claims.", icon: "/icons/general.svg", fields: ['compensation'] },
+          { title: AgreementType.DemandLetter, description: "A formal letter demanding payment or action before taking legal steps.", icon: "/icons/general.svg", fields: ['compensation'] },
+          { title: AgreementType.Affidavit, description: "A sworn written statement confirmed by oath or affirmation.", icon: "/icons/general.svg", fields: ['scopeOfWork'] },
+          { title: AgreementType.NotaryAcknowledgement, description: "A form used by a notary public to certify a signature.", icon: "/icons/general.svg", fields: [] },
+          { title: AgreementType.BillOfSale, description: "Transfer ownership of personal property from a seller to a buyer.", icon: "/icons/general.svg", fields: ['compensation'] },
+          { title: AgreementType.ConsignmentAgreement, description: "A seller (consignor) gives goods to another party (consignee) to sell.", icon: "/icons/general.svg", fields: ['scopeOfWork', 'compensation'] },
+          { title: AgreementType.EquipmentLease, description: "An agreement to rent equipment for a specific period and price.", icon: "/icons/general.svg", fields: ['scopeOfWork', 'compensation'] },
+          { title: AgreementType.BetaTestAgreement, description: "Set terms for users testing a pre-release product.", icon: "/icons/general.svg", fields: [] },
+          { title: AgreementType.SponsorshipAgreement, description: "Outline the terms of a sponsorship for an event or entity.", icon: "/icons/general.svg", fields: ['scopeOfWork', 'compensation'] },
+          { title: AgreementType.ConfidentialityAgreement, description: "A synonym for a Non-Disclosure Agreement (NDA).", icon: "/icons/general.svg", fields: [] },
+      ]
   },
 ];
 
 
-const GENERIC_AGREEMENT_TEXT = `
-This Agreement is made and entered into as of [EFFECTIVE_DATE] (the "Effective Date") by and between:
+const genericHeader = (title: string) => `
+${title.toUpperCase()}
 
-Party A: [PARTY_A_NAME], with a primary address of [PARTY_A_ADDRESS] ("Party A"), and
+This Agreement is made and entered into as of [EFFECTIVE_DATE] (the "Effective Date"), by and between:
 
-Party B: [PARTY_B_NAME], with a primary address of [PARTY_B_ADDRESS] ("Party B").
+Party A: [PARTY_A_NAME] (hereinafter referred to as "Party A"), with an address of [PARTY_A_ADDRESS].
+and
+Party B: [PARTY_B_NAME] (hereinafter referred to as "Party B"), with an address of [PARTY_B_ADDRESS].
 
-WHEREAS, the parties desire to enter into an agreement to define their rights and obligations;
+Party A and Party B may be referred to individually as a "Party" and collectively as the "Parties."
 
-NOW, THEREFORE, in consideration of the mutual covenants and promises contained herein, the parties agree as follows:
+RECITALS
+WHEREAS, the Parties wish to enter into this Agreement to set forth the terms and conditions for their relationship;
+NOW, THEREFORE, in consideration of the mutual covenants contained herein, the Parties agree as follows:
+`;
 
-1.  Purpose of Agreement.
-    The purpose of this agreement is to set forth the terms and conditions governing the relationship between Party A and Party B.
-    [SCOPE_OF_WORK]
+const genericSignature = `
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
 
-2.  Term.
-    This Agreement shall commence on the Effective Date and shall continue until terminated as provided herein.
+PARTY A
 
-3.  Compensation.
-    As full compensation for the services rendered, Party A shall pay Party B the amount of [COMPENSATION_AMOUNT].
-
-4.  Confidentiality.
-    Both parties agree to maintain the confidentiality of any proprietary information shared during the term of this Agreement.
-
-5.  Governing Law.
-    This Agreement shall be governed by and construed in accordance with the laws of the State of ______________.
-
-6.  Entire Agreement.
-    This document constitutes the entire agreement between the parties and supersedes all prior agreements and understandings.
-
-IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
-
-Party A: _________________________
+_________________________
 [PARTY_A_NAME]
 
-Party B: _________________________
+
+PARTY B
+
+_________________________
 [PARTY_B_NAME]
 `;
 
-export const TemplateData: Record<AgreementType, string> = {
-  [AgreementType.SimpleService]: `
-SERVICE AGREEMENT
+const createTemplate = (title: string, body: string) => `${genericHeader(title)}\n${body}\n${genericSignature}`;
 
-This Service Agreement ("Agreement") is made effective as of [EFFECTIVE_DATE], by and between [PARTY_A_NAME] ("Client"), of [PARTY_A_ADDRESS], and [PARTY_B_NAME] ("Service Provider"), of [PARTY_B_ADDRESS].
+// Helper function to create simple templates.
+const simpleTemplate = (title: string, mainClause: string) => createTemplate(title, mainClause);
 
-1. DESCRIPTION OF SERVICES. Service Provider will provide the following services to the Client:
+const serviceTemplate = (title: string) => createTemplate(title, `
+1. SERVICES. Party B agrees to provide the following services to Party A:
 [SCOPE_OF_WORK]
 
-2. PAYMENT. Client agrees to pay Service Provider the sum of [COMPENSATION_AMOUNT] for the services. Payment shall be made as follows: [Payment Schedule].
+2. COMPENSATION. Party A agrees to pay Party B the total amount of [COMPENSATION_AMOUNT] for the services rendered.
 
-3. TERM. This Agreement will terminate automatically upon completion of the Services by the Service Provider.
+3. TERM AND TERMINATION. This Agreement shall commence on the Effective Date and continue until the services are completed, unless terminated earlier by either party with written notice.
 
-4. CONFIDENTIALITY. Service Provider agrees not to disclose or use any confidential information of the Client.
+4. INDEPENDENT CONTRACTOR. Party B is an independent contractor, and nothing in this Agreement shall be construed as creating an employer-employee relationship.
+`);
 
-5. GOVERNING LAW. This Agreement shall be governed by the laws of the State of ______________.
+const allAgreementTypes = Object.values(AgreementType);
+const initialTemplateData = {} as Record<AgreementType, string>;
 
-IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the date first above written.
-
-CLIENT:
-_________________________
-[PARTY_A_NAME]
-
-SERVICE PROVIDER:
-_________________________
-[PARTY_B_NAME]
-`,
-  [AgreementType.NDA]: `
-NON-DISCLOSURE AGREEMENT
-
-This Non-Disclosure Agreement ("Agreement") is entered into as of [EFFECTIVE_DATE] by and between [PARTY_A_NAME] ("Disclosing Party") and [PARTY_B_NAME] ("Receiving Party").
-
-1. DEFINITION OF CONFIDENTIAL INFORMATION. "Confidential Information" means any data or information that is proprietary to the Disclosing Party and not generally known to the public, whether in tangible or intangible form.
-[SCOPE_OF_WORK]
-
-2. OBLIGATIONS OF RECEIVING PARTY. The Receiving Party agrees to hold the Confidential Information in strict confidence and to take all reasonable precautions to protect such Confidential Information.
-
-3. EXCLUSIONS. Confidential Information does not include information that was rightfully known to the Receiving Party prior to its disclosure, or becomes publicly known through no fault of the Receiving Party.
-
-4. TERM. The obligations of this Agreement shall survive for a period of three (3) years from the date of disclosure.
-
-5. GOVERNING LAW. This Agreement shall be governed by the laws of the State of ______________.
-
-DISCLOSING PARTY:
-_________________________
-[PARTY_A_NAME]
-
-RECEIVING PARTY:
-_________________________
-[PARTY_B_NAME]
-`,
-  [AgreementType.IndependentContractor]: `
-INDEPENDENT CONTRACTOR AGREEMENT
-
-This Independent Contractor Agreement ("Agreement") is made as of [EFFECTIVE_DATE], between [PARTY_A_NAME] ("Client") and [PARTY_B_NAME] ("Contractor").
-
-1. SERVICES. The Contractor shall perform the following services for the Client:
-[SCOPE_OF_WORK]
-
-2. COMPENSATION. The Client will pay the Contractor a fee of [COMPENSATION_AMOUNT]. The Contractor will be responsible for their own taxes and insurance.
-
-3. RELATIONSHIP OF PARTIES. It is understood that the Contractor is an independent contractor and not an employee of the Client.
-
-4. TERM AND TERMINATION. This agreement will begin on the Effective Date and will remain in effect until the services are completed, or until terminated by either party with 15 days written notice.
-
-5. GOVERNING LAW. This Agreement shall be governed by the laws of the State of ______________.
-
-CLIENT:
-_________________________
-[PARTY_A_NAME]
-
-CONTRACTOR:
-_________________________
-[PARTY_B_NAME]
-`,
-  // Add placeholder templates for all other agreement types
-  // Using a loop to generate placeholders to avoid massive duplication
-  ...Object.values(AgreementType).reduce((acc, type) => {
-    if (![AgreementType.SimpleService, AgreementType.NDA, AgreementType.IndependentContractor].includes(type)) {
-      acc[type] = `
-${type.toUpperCase()}
-
-${GENERIC_AGREEMENT_TEXT}
-      `.trim();
+for (const type of allAgreementTypes) {
+    if (type.toLowerCase().includes('service') || type.toLowerCase().includes('consulting') || type.toLowerCase().includes('contractor') || type.toLowerCase().includes('agreement')) {
+        initialTemplateData[type] = serviceTemplate(type);
+    } else {
+        initialTemplateData[type] = simpleTemplate(type, `1. PURPOSE. The purpose of this document is to outline the terms and conditions agreed upon by the Parties regarding ${type.toLowerCase()}.\n\n2. KEY DETAILS.\nDetails: [SCOPE_OF_WORK]\n\nFinancials: [COMPENSATION_AMOUNT]`);
     }
-    return acc;
-  }, {} as Record<AgreementType, string>)
-};
+}
+
+// Override specific templates for better quality
+initialTemplateData[AgreementType.NDA] = createTemplate('Non-Disclosure Agreement', `
+1. DEFINITION OF CONFIDENTIAL INFORMATION. For purposes of this Agreement, "Confidential Information" shall include all information or material that has or could have commercial value or other utility in the business in which Disclosing Party is engaged.
+
+2. OBLIGATIONS OF RECEIVING PARTY. Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party.
+
+3. TERM. The non-disclosure provisions of this Agreement shall survive the termination of this Agreement and Receiving Party's duty to hold Confidential Information in confidence shall remain in effect indefinitely.
+`);
+initialTemplateData[AgreementType.ConfidentialityAgreement] = initialTemplateData[AgreementType.NDA];
+
+
+initialTemplateData[AgreementType.SimpleService] = serviceTemplate('Simple Service Agreement');
+initialTemplateData[AgreementType.IndependentContractor] = serviceTemplate('Independent Contractor Agreement');
+initialTemplateData[AgreementType.ConsultingAgreement] = serviceTemplate('Consulting Agreement');
+
+initialTemplateData[AgreementType.OfferLetter] = `
+[EFFECTIVE_DATE]
+
+[PARTY_B_NAME]
+[PARTY_B_ADDRESS]
+
+Dear [PARTY_B_NAME],
+
+[PARTY_A_NAME] (the "Company") is pleased to offer you the position of [Position Title]. We were impressed with your qualifications and believe you will be a great asset to our team.
+
+Your starting salary will be [COMPENSATION_AMOUNT] per year, payable in accordance with the Company's standard payroll practices.
+
+This letter is not a contract of employment, and employment with the Company is on an "at-will" basis.
+
+Sincerely,
+[PARTY_A_NAME]
+_________________________
+`;
+
+initialTemplateData[AgreementType.BillOfSale] = createTemplate('Bill of Sale', `
+1. SALE OF GOODS. The Seller, [PARTY_A_NAME], hereby sells, transfers, and delivers to the Buyer, [PARTY_B_NAME], the following goods: [SCOPE_OF_WORK].
+
+2. PURCHASE PRICE. The Buyer agrees to pay the Seller the purchase price of [COMPENSATION_AMOUNT].
+
+3. "AS IS" CONDITION. The goods are sold in "AS IS" condition, with no warranties, express or implied.
+`);
+
+
+export const TemplateData: Record<AgreementType, string> = initialTemplateData;
